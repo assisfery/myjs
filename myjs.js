@@ -1,5 +1,6 @@
 var myjs = {};
 
+// COOKIE MANAGEMENT
 myjs.getCookie = function(key)
 {
 	var name = key + "=";
@@ -40,4 +41,26 @@ myjs.hasCookie = function(key)
 	return myjs.getCookie(key) != null;
 }
 
+// LOCAL STORAGE
+myjs.getLocal = function(key)
+{
+	return localStorage.getItem(key);
+}
+
+myjs.setLocal = function(key, value)
+{
+	return localStorage.setItem(key, value);
+}
+
+myjs.hasLocal = function(key)
+{
+	return myjs.getLocal(key) != null;
+}
+
+myjs.removeLocal = function(key)
+{
+	localStorage.removeItem(key);
+}
+
+// OTHERS
 console.log("loaded myjs...")
