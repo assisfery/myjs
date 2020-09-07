@@ -67,5 +67,26 @@ myjs.removeLocal = function(key)
 	localStorage.removeItem(key);
 }
 
+// SESSION STORAGE
+myjs.getSession = function(key)
+{
+	return sessionStorage.getItem(key);
+}
+
+myjs.setSession = function(key, value)
+{
+	return sessionStorage.setItem(key, value);
+}
+
+myjs.hasSession = function(key)
+{
+	return myjs.getSession(key) != null;
+}
+
+myjs.removeSession = function(key)
+{
+	sessionStorage.removeItem(key);
+}
+
 // OTHERS
 console.log("loaded myjs...")
