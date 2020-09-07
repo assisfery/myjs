@@ -41,6 +41,11 @@ myjs.hasCookie = function(key)
 	return myjs.getCookie(key) != null;
 }
 
+myjs.removeCookie = function(key)
+{
+	myjs.setCookie(key, "", -1);
+}
+
 // LOCAL STORAGE
 myjs.getLocal = function(key)
 {
