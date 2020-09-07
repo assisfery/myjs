@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>myjs - </title>
+	<title>myjs - A simple JavaScript Facade library, to facilitate my life.</title>
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
@@ -14,7 +14,47 @@
 		<h1 class="text-center">myjs</h1>
 		<p class="text-center">A simple JavaScript Facade library, to facilitate my life.</p>
 
+		<h2>Cookies</h2>
+		<p>To manage cookies use those functions.</p>
 
+		<div class="row">
+
+			<div class="col-12 col-md-4 p-4">
+
+				<h4>myjs.setCookie(key)</h4>
+				<p>Set a value to cookie.</p>
+
+				<button class="btn btn-outline-secondary" onclick="myjs.setCookie('name', prompt('Insert your name'))">
+					Set Cookie
+				</button>
+
+				
+			</div>
+
+			<div class="col-12 col-md-4 p-4">
+
+				<h4>myjs.getCookie(key)</h4>
+				<p>Get a defined cookie.</p>
+
+				<button class="btn btn-outline-secondary" onclick="alert(myjs.getCookie('name'))">
+					Get Cookie
+				</button>
+
+				
+			</div>
+
+			<div class="col-12 col-md-4 p-4">
+
+				<h4>myjs.hasCookie(key)</h4>
+				<p>Verify if a cookie exists.</p>
+
+				<button class="btn btn-outline-secondary" onclick="alert(myjs.hasCookie('name'))">
+					Has Cookie
+				</button>
+
+				
+			</div>
+		</div>
 
 	</div>	
 
