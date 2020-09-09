@@ -28,6 +28,19 @@ Delete a cookie.
 myjs.removeCookie(key)
 ```
 
+## Query String
+To get query string parameters from url you can use that function.
+
+Get query string from current page url.
+```js
+myjs.getQuery(key)
+```
+
+Get query string from a url.
+```js
+myjs.getQuery(key, url)
+```
+
 ## Local Storage
 To use localStorage, for storing data in your browser, use those functions.
 
