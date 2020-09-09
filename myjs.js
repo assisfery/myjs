@@ -50,7 +50,7 @@ myjs.removeCookie = function(key)
 myjs.getQuery = function(key, url = null)
 {
 	if (!url) url = window.location.href;
-	key = key.replace(/[\[\]]/g, '\\$&');
+		key = key.replace(/[\[\]]/g, '\\$&');
 
     var regex = new RegExp('[?&]' + key + '(=([^&#]*)|&|#|$)'),
 

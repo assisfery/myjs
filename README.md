@@ -2,6 +2,9 @@
 # myjs
 A simple JavaScript Facade library, to facilitate my life.
 
+## Demo
+See the demo here: [https://assisfery.github.io/myjs/index.html](https://assisfery.github.io/myjs/index.html)
+
 ## Cookies
 To manage cookies use those functions.
 
