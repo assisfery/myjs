@@ -86,6 +86,16 @@ myjs.isNumber = function(str)
 	return !isNaN(str);
 }
 
+// SLUGIFY
+myjs.slug = function(str)
+{
+	return str
+        .toLowerCase()
+        .replace(/ /g,'-')
+        .replace(/[^\w-]+/g,'')
+        ;
+}
+
 // LOCAL STORAGE
 myjs.getLocal = function(key)
 {
