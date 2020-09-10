@@ -213,7 +213,8 @@ myjs.drawChart = function(area, type, title, labels, data, backgroundColor = nul
 	                    beginAtZero: true
 	                }
 	            }]
-	        }
+	        },
+	        maintainAspectRatio: false,
 	    }
 	});
 }
@@ -235,7 +236,8 @@ myjs.drawChartSerie = function(area, type, labels, data)
 	                    beginAtZero: true
 	                }
 	            }]
-	        }
+	        },
+	        maintainAspectRatio: false,
 	    }
 	});
 }
