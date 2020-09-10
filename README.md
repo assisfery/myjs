@@ -41,6 +41,24 @@ Get query string from a url.
 myjs.getQuery(key, url)
 ```
 
+## Validations
+To validate some data use those functions.
+
+To validate if a string is email.
+```js
+myjs.isEmail(str)
+```
+
+To validate if a string is URL.
+```js
+myjs.isUrl(str)
+```
+
+To validate if a string is a number.
+```js
+myjs.isNumber(str)
+```
+
 ## Local Storage
 To use localStorage, for storing data in your browser, use those functions.
 
