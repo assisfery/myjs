@@ -166,29 +166,33 @@ myjs.getHtml = function(query)
 }
 
 // CHART
+myjs.purpleColors = [
+    'rgba(154, 18, 179, 0.7)',
+    'rgba(145, 61, 136, 0.7)',
+    'rgba(190, 144, 212, 0.7)',
+    'rgba(155, 89, 182, 0.7)',
+    'rgba(142, 68, 173, 0.7)',
+    'rgba(102, 51, 153, 0.7)'
+];
+
+myjs.blueColors = [
+    'rgba(44, 130, 201, 0.7)',
+    'rgba(0, 181, 204, 0.7)',
+    'rgba(30, 139, 195, 0.7)',
+    'rgba(137, 196, 244, 0.7)',
+    'rgba(75, 119, 190, 0.7)',
+    'rgba(65, 131, 215, 0.7)'
+];
+
 myjs.drawChart = function(area, type, title, labels, data, backgroundColor = null, borderColor = null)
 {
 	var ctx = document.querySelector(area).getContext('2d');
 
 	if(!backgroundColor)
-		backgroundColor = [
-	        'rgba(154, 18, 179, 0.7)',
-	        'rgba(145, 61, 136, 0.7)',
-	        'rgba(190, 144, 212, 0.7)',
-	        'rgba(155, 89, 182, 0.7)',
-	        'rgba(142, 68, 173, 0.7)',
-	        'rgba(102, 51, 153, 0.7)'
-	    ];
+		backgroundColor = myjs.purpleColors;
 
 	if(!borderColor)
-		borderColor = [
-	        'rgba(154, 18, 179, 0.7)',
-	        'rgba(145, 61, 136, 0.7)',
-	        'rgba(190, 144, 212, 0.7)',
-	        'rgba(155, 89, 182, 0.7)',
-	        'rgba(142, 68, 173, 0.7)',
-	        'rgba(102, 51, 153, 0.7)'
-	    ];
+		borderColor = myjs.purpleColors;
 
 	var myChart = new Chart(ctx, {
 	    type: type,
@@ -201,6 +205,28 @@ myjs.drawChart = function(area, type, title, labels, data, backgroundColor = nul
 	            borderColor: borderColor,
 	            borderWidth: 1
 	        }]
+	    },
+	    options: {
+	        scales: {
+	            yAxes: [{
+	                ticks: {
+	                    beginAtZero: true
+	                }
+	            }]
+	        }
+	    }
+	});
+}
+
+myjs.drawChartSerie = function(area, type, labels, data)
+{
+	var ctx = document.querySelector(area).getContext('2d');
+
+	var myChart = new Chart(ctx, {
+	    type: type,
+	    data: {
+	        labels: labels,
+	        datasets: data
 	    },
 	    options: {
 	        scales: {
