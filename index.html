@@ -4,7 +4,9 @@
 	<title>myjs - A simple JavaScript Facade library, to facilitate my life.</title>
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.css">
 
+	<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
 	<script type="text/javascript" src="myjs.js"></script>
 
 	<style type="text/css">
@@ -166,7 +168,7 @@
 		</div>
 
 		<h2 class="mt-big">Navigator</h2>
-		<p>To execute navigator utils use that functions.</p>
+		<p>To execute navigator utils use that function.</p>
 
 		<div class="row">
 
@@ -180,7 +182,7 @@
 		</div>
 
 		<h2 class="mt-big">Element</h2>
-		<p>To manipulate dom use those function.</p>
+		<p>To manipulate dom use those functions.</p>
 
 		<div class="row">
 
@@ -217,6 +219,31 @@
 				<h4>myjs.<span class="text-primary">getHtml</span>(query)</h4>
 				<p>Get a inner html of the first element that match with query.</p>
 				
+			</div>
+
+		</div>
+
+		<h2 class="mt-big">DrawChart</h2>
+		<p>
+			To draw a chart you can use those functions.<br>
+			Those functions depends of ChartJS libray.
+		</p>
+
+		<div class="row">
+
+			<div class="col-12 col-sm-6 col-md-4 p-1">
+
+				<div class="chart-box">
+					<canvas id="chart1"></canvas>
+				</div>
+
+				<h4>myjs.<span class="text-primary">drawChart</span>(area, type, title, labels, data)</h4>
+				<p>To draw a simple chart of any type supported by ChartJS.</p>
+				
+				<button class="btn btn-outline-secondary" onclick="myjs.drawChart('#chart1', 'bar', 'Some chart', ['A', 'B', 'C'], [1, 2, 3])">
+					DrawChart
+				</button>
+
 			</div>
 
 		</div>

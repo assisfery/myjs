@@ -165,6 +165,55 @@ myjs.getHtml = function(query)
 	return null;
 }
 
+// CHART
+myjs.drawChart = function(area, type, title, labels, data, backgroundColor = null, borderColor = null)
+{
+	var ctx = document.querySelector(area).getContext('2d');
+
+	if(!backgroundColor)
+		backgroundColor = [
+	        'rgba(154, 18, 179, 0.7)',
+	        'rgba(145, 61, 136, 0.7)',
+	        'rgba(190, 144, 212, 0.7)',
+	        'rgba(155, 89, 182, 0.7)',
+	        'rgba(142, 68, 173, 0.7)',
+	        'rgba(102, 51, 153, 0.7)'
+	    ];
+
+	if(!borderColor)
+		borderColor = [
+	        'rgba(154, 18, 179, 0.7)',
+	        'rgba(145, 61, 136, 0.7)',
+	        'rgba(190, 144, 212, 0.7)',
+	        'rgba(155, 89, 182, 0.7)',
+	        'rgba(142, 68, 173, 0.7)',
+	        'rgba(102, 51, 153, 0.7)'
+	    ];
+
+	var myChart = new Chart(ctx, {
+	    type: type,
+	    data: {
+	        labels: labels,
+	        datasets: [{
+	            label: title,
+	            data: data,
+	            backgroundColor: backgroundColor,
+	            borderColor: borderColor,
+	            borderWidth: 1
+	        }]
+	    },
+	    options: {
+	        scales: {
+	            yAxes: [{
+	                ticks: {
+	                    beginAtZero: true
+	                }
+	            }]
+	        }
+	    }
+	});
+}
+
 // LOCAL STORAGE
 myjs.getLocal = function(key)
 {
