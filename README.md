@@ -2,6 +2,8 @@
 # myjs
 A simple JavaScript Facade library, to facilitate my life.
 
+[![](https://data.jsdelivr.com/v1/package/gh/assisfery/myjs/badge)](https://www.jsdelivr.com/package/gh/assisfery/myjs)
+
 ## Demo
 See the demo here: [https://assisfery.github.io/myjs/index.html](https://assisfery.github.io/myjs/index.html)
 
@@ -87,6 +89,7 @@ myjs.random(max)
 
 ## Navigator
 To execute navigator utils use that functions.
+
 Redirect page to another url.
 ```js
 myjs.redirect(url)
