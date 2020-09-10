@@ -81,9 +81,9 @@ myjs.isUrl = function(str)
 	return !!pattern.test(str);
 }
 
-myjs.isNumber = function(num)
+myjs.isNumber = function(str)
 {
-	return !isNaN(num);
+	return !isNaN(str);
 }
 
 // LOCAL STORAGE
