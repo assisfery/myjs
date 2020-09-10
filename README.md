@@ -64,6 +64,14 @@ To validate if a string is a number.
 myjs.isNumber(str)
 ```
 
+## Slugify
+To slugify a string use that function.
+
+Return a string slug.
+```js
+myjs.slug(str)
+```
+
 ## Local Storage
 To use localStorage, for storing data in your browser, use those functions.
 
