@@ -85,6 +85,13 @@ Get a random number from zero to max, but max is not included.
 myjs.random(max)
 ```
 
+## Navigator
+To execute navigator utils use that functions.
+Redirect page to another url.
+```js
+myjs.redirect(url)
+```
+
 ## Local Storage
 To use localStorage, for storing data in your browser, use those functions.
 
