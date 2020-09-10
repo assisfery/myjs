@@ -105,6 +105,12 @@ myjs.random = function(min, max = null)
 	return min + Math.floor(Math.random() * (max - min));
 }
 
+// REDIRECT
+myjs.redirect = function(url)
+{
+	window.location.href = url;
+}
+
 // LOCAL STORAGE
 myjs.getLocal = function(key)
 {
