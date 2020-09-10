@@ -72,6 +72,19 @@ Return a string slug.
 myjs.slug(str)
 ```
 
+## Random
+To get the random number use that function.
+
+Get a random number from min to max, but max is not included.
+```js
+myjs.random(min, max)
+```
+
+Get a random number from zero to max, but max is not included.
+```js
+myjs.random(max)
+```
+
 ## Local Storage
 To use localStorage, for storing data in your browser, use those functions.
 
