@@ -135,13 +135,13 @@ myjs.addClass = function(query, new_class)
 	}
 }
 
-myjs.removeClass = function(query, new_class)
+myjs.removeClass = function(query, old_class)
 {
 	var elements = myjs.e(query);
 
 	for(var i = 0; i < elements.length; i++)
 	{
-		elements[i].classList.remove(new_class);
+		elements[i].classList.remove(old_class);
 	}
 }
 
