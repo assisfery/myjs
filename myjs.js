@@ -111,6 +111,20 @@ myjs.redirect = function(url)
 	window.location.href = url;
 }
 
+// ELEMENT
+myjs.e = function(query)
+{
+	var elements = document.querySelectorAll(query);
+
+	// if(elements.length == 1)
+	// 	return elements[0];
+
+	if(elements.length == 0)
+		return null;
+
+	return elements;
+}
+
 // LOCAL STORAGE
 myjs.getLocal = function(key)
 {
