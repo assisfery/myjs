@@ -145,13 +145,13 @@ myjs.removeClass = function(query, old_class)
 	}
 }
 
-myjs.setHtml = function(query, text)
+myjs.setHtml = function(query, html)
 {
 	var elements = myjs.e(query);
 
 	for(var i = 0; i < elements.length; i++)
 	{
-		elements[i].innerHTML = text;
+		elements[i].innerHTML = html;
 	}
 }
 

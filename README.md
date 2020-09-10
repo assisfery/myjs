@@ -113,6 +113,16 @@ Remove a class to all elements that match with query.
 myjs.removeClass(query, class)
 ```
 
+Set a inner html in all elements that match with query.
+```js
+myjs.setHtml(query, html)
+```
+
+Get a inner html of the first element that match with query.
+```js
+myjs.getHtml(query)
+```
+
 ## Local Storage
 To use localStorage, for storing data in your browser, use those functions.
 
