@@ -145,6 +145,26 @@ myjs.removeClass = function(query, old_class)
 	}
 }
 
+myjs.setHtml = function(query, text)
+{
+	var elements = myjs.e(query);
+
+	for(var i = 0; i < elements.length; i++)
+	{
+		elements[i].innerHTML = text;
+	}
+}
+
+myjs.getHtml = function(query)
+{
+	var elements = myjs.e(query);
+
+	if(elements)
+		return elements[0].innerHTML;
+
+	return null;
+}
+
 // LOCAL STORAGE
 myjs.getLocal = function(key)
 {
