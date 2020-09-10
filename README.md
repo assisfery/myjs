@@ -13,6 +13,11 @@ Set a value to cookie.
 myjs.setCookie(key, value)
 ```
 
+Set a value for a cookie with expiration days.
+```js
+myjs.setCookie(key, value, days)
+```
+
 Get a defined cookie.
 ```js
 myjs.getCookie(key)
