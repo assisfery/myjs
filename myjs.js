@@ -96,6 +96,15 @@ myjs.slug = function(str)
         ;
 }
 
+// RANDOM
+myjs.random = function(min, max = null)
+{
+	if(max == null)
+		return myjs.random(0, min);
+
+	return min + Math.floor(Math.random() * (max - min));
+}
+
 // LOCAL STORAGE
 myjs.getLocal = function(key)
 {
