@@ -62,6 +62,22 @@ myjs.getQuery = function(key, url = null)
 return decodeURIComponent(results[2].replace(/\+/g, ' '));
 }
 
+// VALIDATIONS
+myjs.isEmail = function(str)
+{
+	
+}
+
+myjs.isUrl = function(str)
+{
+	
+}
+
+myjs.isNumber = function(num)
+{
+	return !isNaN(num);
+}
+
 // LOCAL STORAGE
 myjs.getLocal = function(key)
 {
