@@ -95,6 +95,24 @@ Redirect page to another url.
 myjs.redirect(url)
 ```
 
+## Element
+To manipulate dom use those function.
+
+Get all elements that match with query done. For example: myjs.e(".btn") will select all elements that has class "btn".
+```js
+myjs.e(query)
+```
+
+Add a class to all elements that match with query.
+```js
+myjs.addClass(query, class)
+```
+
+Remove a class to all elements that match with query.
+```js
+myjs.removeClass(query, class)
+```
+
 ## Local Storage
 To use localStorage, for storing data in your browser, use those functions.
 
