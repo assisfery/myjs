@@ -132,7 +132,8 @@ To draw a simple chart of any type supported by ChartJS.
 ```js
  myjs.drawChart(area, type, title, labels, data)
 ```
-Sample
+
+**Sample**
 ```js
 myjs.drawChart('#chart1', 'bar', 'Some chart', ['A', 'B', 'C'], [1, 2, 3])
 ```
@@ -141,25 +142,26 @@ To draw a series chart of any type supported by ChartJS.
 ```js
 myjs.drawChartSerie(area, type, labels, datasets)
 ```
-Sample
+
+**Sample**
 ```js
 myjs.drawChartSerie('#chart2', 'bar', ['A', 'B', 'C'],
-	[
-		{
+[
+	{
            label: 'Some data 1',
            data: [12, 19, 3],
            backgroundColor: myjs.purpleColors,
            borderColor: myjs.purpleColors,
            borderWidth: 1
-       },
-       {
+	},
+	{
            label: 'Some data 2',
            data: [2, 6, 8],
            backgroundColor: myjs.blueColors,
            borderColor: myjs.blueColors,
            borderWidth: 1,
-       }
-	]
+	}
+]
 );
 ```
 
