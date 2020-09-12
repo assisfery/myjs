@@ -123,6 +123,16 @@ Get a inner html of the first element that match with query.
 myjs.getHtml(query)
 ```
 
+Set a value html in all elements that match with query.
+```js
+myjs.setVal(query, value)
+```
+
+Get a value of the first element that match with query.
+```js
+myjs.getVal(query)
+```
+
 ## DrawChart
 To draw a chart you can use those functions.  
 
@@ -147,24 +157,23 @@ myjs.drawChartSerie(area, type, labels, datasets)
 ```js
 myjs.drawChartSerie('#chart2', 'bar', ['A', 'B', 'C'],
 [
-	{
+  {
            label: 'Some data 1',
            data: [12, 19, 3],
            backgroundColor: myjs.purpleColors,
            borderColor: myjs.purpleColors,
            borderWidth: 1
-	},
-	{
+  },
+  {
            label: 'Some data 2',
            data: [2, 6, 8],
            backgroundColor: myjs.blueColors,
            borderColor: myjs.blueColors,
            borderWidth: 1,
-	}
+  }
 ]
 );
 ```
-
 
 ## Local Storage
 To use localStorage, for storing data in your browser, use those functions.
