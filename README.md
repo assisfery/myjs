@@ -133,6 +133,16 @@ Get a value of the first element that match with query.
 myjs.getVal(query)
 ```
 
+Hide all elements that match with query.
+```js
+myjs.hide(query)
+```
+
+Show all elements that match with query.
+```js
+myjs.show(query)
+```
+
 ## DrawChart
 To draw a chart you can use those functions.  
 
