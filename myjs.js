@@ -195,6 +195,16 @@ myjs.hide = function(query)
 	}
 }
 
+myjs.show = function(query)
+{
+	var elements = myjs.e(query);
+
+	for(var i = 0; i < elements.length; i++)
+	{
+		elements[i].style.display = "block";
+	}
+}
+
 // CHART
 myjs.purpleColors = [
     'rgba(154, 18, 179, 0.7)',
