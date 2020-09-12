@@ -282,6 +282,14 @@ myjs.drawChartSerie = function(area, type, labels, data)
 	});
 }
 
+// MOMENT DATETIME TIMEZONE CONVERTION
+myjs.toUtc = function(datetime, timezone)
+{
+	var x = datetime; //moment(datetime, "YYYY-MM-DD HH:mm:ss");
+	var y = moment.tz(x, timezone);
+	return y.utc();
+}
+
 // LOCAL STORAGE
 myjs.getLocal = function(key)
 {

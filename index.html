@@ -7,6 +7,10 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.css">
 
 	<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js" integrity="sha512-rmZcZsyhe0/MAjquhTgiUcb4d9knaFc7b5xAfju483gbEXTkeJRUMIPk6s3ySZMYUHEcjKbjLjyddGWMrNEvZg==" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.31/moment-timezone-with-data-1970-2030.min.js" integrity="sha512-4szk+2R1QZsgTRbYdGZQjGUPNGGxetUFFsxSVAjC9L7smstBmPQtEkFto9JFLHvPVM7JlUdy2lMe62OWNSceyA==" crossorigin="anonymous"></script>
+
 	<script type="text/javascript" src="myjs.js"></script>
 
 	<style type="text/css">
@@ -227,7 +231,7 @@
 
 			<div class="col-12 col-sm-6 col-md-4 p-1">
 
-				<input type="text" id="txt1">
+				<input type="text" id="txt1" class="form-control">
 
 				<h4>myjs.<span class="text-primary">setVal</span>(query, value)</h4>
 				<p>Set a value html in all elements that match with query.</p>
@@ -327,6 +331,41 @@
 
 				</script>
 
+			</div>
+
+		</div>
+
+		<h2 class="mt-big">Datetime timezone convertion</h2>
+		<p>To convert a time to or from UTC use those functions.</p>
+
+		<div class="row">
+
+			<div class="col-12 col-sm-6 col-md-4 p-1">
+
+				<input type="text" id="txtDatetime1" class="form-control"><br>
+				<input type="text" id="txtTimezone1" class="form-control" value="Atlantic/Cape_Verde"><br>
+				<input type="text" id="txtDatetime2" class="form-control">
+
+				<h4>myjs.<span class="text-primary">toUtc</span>(datetime, timezone)</h4>
+				<p>Convert a datetime from a timezone to UTC.</p>
+
+				<button class="btn btn-outline-secondary" onclick="convertToUtcSample()">
+					To UTC
+				</button>
+
+				<script type="text/javascript">
+					
+					myjs.setVal("#txtDatetime1", moment().format("YYYY-MM-DD HH:mm:ss"));
+
+					function convertToUtcSample()
+					{
+						myjs.setVal("#txtDatetime2",
+							myjs.toUtc(myjs.getVal("#txtDatetime1"), myjs.getVal("#txtTimezone1")).format("YYYY-MM-DD HH:mm:ss")
+						);						
+					}
+
+				</script>
+				
 			</div>
 
 		</div>
