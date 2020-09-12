@@ -225,6 +225,30 @@
 				
 			</div>
 
+			<div class="col-12 col-sm-6 col-md-4 p-1">
+
+				<input type="text" id="txt1">
+
+				<h4>myjs.<span class="text-primary">setVal</span>(query, value)</h4>
+				<p>Set a value html in all elements that match with query.</p>
+
+				<button class="btn btn-outline-secondary" onclick="myjs.setVal('#txt1', 123)">
+					Set Value
+				</button>
+				
+			</div>
+
+			<div class="col-12 col-sm-6 col-md-4 p-1">
+
+				<h4>myjs.<span class="text-primary">getVal</span>(query)</h4>
+				<p>Get a value of the first element that match with query.</p>
+
+				<button class="btn btn-outline-secondary" onclick="alert(myjs.getVal('#txt1'))">
+					Get Value
+				</button>
+				
+			</div>
+
 		</div>
 
 		<h2 class="mt-big">DrawChart</h2>

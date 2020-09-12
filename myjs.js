@@ -165,6 +165,26 @@ myjs.getHtml = function(query)
 	return null;
 }
 
+myjs.setVal = function(query, value)
+{
+	var elements = myjs.e(query);
+
+	for(var i = 0; i < elements.length; i++)
+	{
+		elements[i].value = value;
+	}
+}
+
+myjs.getVal = function(query)
+{
+	var elements = myjs.e(query);
+
+	if(elements)
+		return elements[0].value;
+
+	return null;
+}
+
 // CHART
 myjs.purpleColors = [
     'rgba(154, 18, 179, 0.7)',
