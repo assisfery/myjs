@@ -290,6 +290,13 @@ myjs.toUtc = function(datetime, timezone)
 	return y.utc();
 }
 
+myjs.fromUtc = function(datetime, timezone)
+{
+	var x = moment.utc(datetime);
+	var y =  moment.tz(x, timezone);
+	return y;
+}
+
 // LOCAL STORAGE
 myjs.getLocal = function(key)
 {

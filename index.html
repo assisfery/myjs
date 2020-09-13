@@ -336,7 +336,10 @@
 		</div>
 
 		<h2 class="mt-big">Datetime timezone convertion</h2>
-		<p>To convert a time to or from UTC use those functions.</p>
+		<p>
+			To convert a time to or from UTC use those functions. <br>
+			Those functions depends of MomentJS Library.
+		</p>
 
 		<div class="row">
 
@@ -361,6 +364,34 @@
 					{
 						myjs.setVal("#txtDatetime2",
 							myjs.toUtc(myjs.getVal("#txtDatetime1"), myjs.getVal("#txtTimezone1")).format("YYYY-MM-DD HH:mm:ss")
+						);						
+					}
+
+				</script>
+				
+			</div>
+
+			<div class="col-12 col-sm-6 col-md-4 p-1">
+
+				<input type="text" id="txtDatetime3" class="form-control"><br>
+				<input type="text" id="txtTimezone2" class="form-control" value="Atlantic/Cape_Verde"><br>
+				<input type="text" id="txtDatetime4" class="form-control">
+
+				<h4>myjs.<span class="text-primary">fromUtc</span>(datetime, timezone)</h4>
+				<p>Convert a datetime from UTC to a timezone.</p>
+
+				<button class="btn btn-outline-secondary" onclick="convertFromUtcSample()">
+					From UTC
+				</button>
+
+				<script type="text/javascript">
+					
+					myjs.setVal("#txtDatetime3", moment().format("YYYY-MM-DD HH:mm:ss"));
+
+					function convertFromUtcSample()
+					{
+						myjs.setVal("#txtDatetime4",
+							myjs.fromUtc(myjs.getVal("#txtDatetime3"), myjs.getVal("#txtTimezone2")).format("YYYY-MM-DD HH:mm:ss")
 						);						
 					}
 
