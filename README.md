@@ -185,6 +185,29 @@ myjs.drawChartSerie('#chart2', 'bar', ['A', 'B', 'C'],
 );
 ```
 
+## Datetime timezone convertion
+To convert a time to or from UTC use those functions.  
+
+Those functions depends of MomentJS Library.
+
+Convert a datetime from a timezone to UTC.
+```js
+myjs.toUtc(datetime, timezone)
+```
+**Sample**
+```js
+myjs.toUtc("2020-09-13 09:49:39", "Atlantic/Cape_Verde")
+```
+
+Convert a datetime from UTC to a timezone.
+```js
+myjs.fromUtc(datetime, timezone)
+```
+**Sample**
+```js
+myjs.fromUtc("2020-09-13 09:49:39", "Atlantic/Cape_Verde")
+```
+
 ## Local Storage
 To use localStorage, for storing data in your browser, use those functions.
 
