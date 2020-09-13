@@ -147,6 +147,9 @@ myjs.show(query)
 To draw a chart you can use those functions.  
 
 Those functions depends of ChartJS libray.
+```html
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+```
 
 To draw a simple chart of any type supported by ChartJS.
 ```js
@@ -189,6 +192,10 @@ myjs.drawChartSerie('#chart2', 'bar', ['A', 'B', 'C'],
 To convert a time to or from UTC use those functions.  
 
 Those functions depends of MomentJS Library.
+```html
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.31/moment-timezone-with-data-1970-2030.min.js"></script>
+```
 
 Convert a datetime from a timezone to UTC.
 ```js
