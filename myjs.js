@@ -205,6 +205,16 @@ myjs.show = function(query)
 	}
 }
 
+myjs.autoSelect = function()
+{
+	var elements = myjs.e("[data-value]");
+
+	for(var i = 0; i < elements.length; i++)
+	{
+		elements[i].value = elements[i].getAttribute("data-value");
+	}
+}
+
 // CHART
 myjs.purpleColors = [
     'rgba(154, 18, 179, 0.7)',
@@ -340,4 +350,4 @@ myjs.removeSession = function(key)
 }
 
 // OTHERS
-console.log("loaded myjs...")
+//console.log("loaded myjs...")
