@@ -441,6 +441,30 @@
 
 		</div>
 
+		<h2 class="mt-big">Swap array elements</h2>
+		<p>To swap array elements position (to left or right) use <b>myjs.swapArray()</b> function.</p>
+
+		<h4>myjs.<span class="text-primary">swapArray</span>(elements, position, direction = "right", callback = null)</h4>
+
+		<button onclick="swapRightSample()" class="btn btn-primary">Swap position 0 to right</button>
+		<button onclick="swapLeftSample()" class="btn btn-primary">Swap position 4 to left</button>
+
+		<script type="text/javascript">
+			
+			var arrayElements = [1, 2, 3, 4, 5];
+
+			function swapRightSample()
+			{
+				myjs.swapArray(arrayElements, 0, 'right', function() { alert(arrayElements); });
+			}
+
+			function swapLeftSample()
+			{
+				myjs.swapArray(arrayElements, 4, 'left', function() { alert(arrayElements); });
+			}
+
+		</script>
+
 	</div>	
 
 </body>

@@ -149,6 +149,21 @@ Show all elements that match with query.
 myjs.show(query)
 ```
 
+## AutoSelect
+To auto select value in select (dropdown) element use tag **data-value="value1"** and execute the function **myjs.autoSelect()** when page is ready.
+
+```html
+<select data-value="3" class="form-control">
+  <option value="1">Value 1</option>
+  <option value="2">Value 2</option>
+  <option value="3">Value 3</option>
+</select>
+```
+
+```js
+myjs.autoSelect()
+```
+
 ## DrawChart
 To draw a chart you can use those functions.  
 
@@ -219,4 +234,11 @@ myjs.fromUtc(datetime, timezone)
 **Sample**
 ```js
 myjs.fromUtc("2020-09-13 09:49:39", "Atlantic/Cape_Verde")
+```
+
+## Swap array elements
+To swap array elements position (to left or right) use **myjs.swapArray()** function.
+
+```js
+myjs.swapArray(elements, position, direction = "right", callback = null)
 ```

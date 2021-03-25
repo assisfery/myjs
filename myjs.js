@@ -307,5 +307,35 @@ myjs.fromUtc = function(datetime, timezone)
 	return y;
 }
 
+// SWAP ARRAY ELEMENTS
+myjs.swapArray = function(elements, position, direction = "right", callback = null) {
+
+    for(var i = 0; i < elements.length; i++)
+    {
+        if(i == position)
+        {
+            if(direction == 'left' && i > 0)
+            {
+                var aux = elements[i];
+                elements[i] = elements[i-1];
+                elements[i-1] = aux;
+            }
+            else if(direction == 'right' && i < elements.length - 1)
+            {
+                var aux = elements[i];
+                elements[i] = elements[i+1];
+                elements[i+1] = aux;
+            }
+
+            break;
+        }
+    }
+
+    if(callback)
+    	callback();
+
+    return elements;
+}
+
 // OTHERS
 //console.log("loaded myjs...")
