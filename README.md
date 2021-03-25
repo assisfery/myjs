@@ -10,7 +10,7 @@ See the demo here: [https://assisfery.github.io/myjs/index.html](https://assisfe
 ## Installation
 Just include the myjs.min.js file in you web page.
 ```html
-<script src="https://cdn.jsdelivr.net/gh/assisfery/myjs@1.0/myjs.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/assisfery/myjs@1.1/myjs.min.js"></script>
 ```
 
 ## Cookies
