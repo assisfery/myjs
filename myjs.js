@@ -307,47 +307,5 @@ myjs.fromUtc = function(datetime, timezone)
 	return y;
 }
 
-// LOCAL STORAGE
-myjs.getLocal = function(key)
-{
-	return localStorage.getItem(key);
-}
-
-myjs.setLocal = function(key, value)
-{
-	return localStorage.setItem(key, value);
-}
-
-myjs.hasLocal = function(key)
-{
-	return myjs.getLocal(key) != null;
-}
-
-myjs.removeLocal = function(key)
-{
-	localStorage.removeItem(key);
-}
-
-// SESSION STORAGE
-myjs.getSession = function(key)
-{
-	return sessionStorage.getItem(key);
-}
-
-myjs.setSession = function(key, value)
-{
-	return sessionStorage.setItem(key, value);
-}
-
-myjs.hasSession = function(key)
-{
-	return myjs.getSession(key) != null;
-}
-
-myjs.removeSession = function(key)
-{
-	sessionStorage.removeItem(key);
-}
-
 // OTHERS
 //console.log("loaded myjs...")
