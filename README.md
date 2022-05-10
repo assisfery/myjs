@@ -236,6 +236,17 @@ myjs.fromUtc(datetime, timezone)
 myjs.fromUtc("2020-09-13 09:49:39", "Atlantic/Cape_Verde")
 ```
 
+To get your current timezone, use the function below.
+```js
+moment.tz.guess()
+```
+
+To get all timezones, use the function below.
+```js
+moment.tz.names()
+```
+
+
 ## Swap array elements
 To swap array elements position (to left or right) use **myjs.swapArray()** function.
 
